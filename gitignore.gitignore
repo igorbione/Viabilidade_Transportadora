@@ -1,0 +1,36 @@
+# Ignorar arquivos Excel
+*.xlsx
+
+# Ignorar arquivos CSV brutos (dados de entrada originais)
+*.csv
+
+# Ignorar pastas de ambiente virtual Python
+.venv/
+venv/
+env/
+
+# Ignorar arquivos de cache e compilação Python
+__pycache__/
+*.pyc
+*.pyd
+.Python/
+
+# Ignorar dados processados e outputs temporários (se você quiser regenerá-los)
+# Se você quiser versionar os CSVs processados (sellers_geocodificados.csv etc.),
+# você deve ser mais específico ou remover a linha *.csv acima.
+# Exemplo: Se você quer versionar os CSVs processados, mas não os brutos:
+# data/raw/*.csv  # Ignora CSVs na pasta raw
+# data/processed/*.csv # Se você quer versionar esses, não adicione essa linha ou seja específico
+
+# Ignorar notebooks checkpoints e arquivos temporários
+.ipynb_checkpoints/
+*.tmp
+*.log
+
+# Ignorar arquivos de sistema operacional específicos (Windows, macOS)
+.DS_Store
+Thumbs.db
+
+# Ignorar segredos de API ou configurações locais (se você usar)
+# config.py
+# .env
