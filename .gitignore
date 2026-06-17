@@ -1,0 +1,37 @@
+# Data files (contain real seller addresses — gitignored for privacy)
+data/raw/*.xlsx
+data/processed/*.xlsx
+data/processed/*.csv
+notebooks/enderecos_com_coordenadas.csv
+
+# Generated outputs
+outputs/
+!outputs/.gitkeep
+
+# Excel and CSV files (general)
+*.xlsx
+*.csv
+
+# Ambiente virtual Python
+.venv/
+venv/
+env/
+
+# Cache e compilação Python
+__pycache__/
+*.pyc
+*.pyd
+.Python/
+
+# Notebooks checkpoints e temporários
+.ipynb_checkpoints/
+*.tmp
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Segredos e configurações locais
+.env
+config.py
